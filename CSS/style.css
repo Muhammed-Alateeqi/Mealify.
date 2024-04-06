@@ -1,0 +1,202 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    font-family: "Open Sans", sans-serif;
+}
+
+/* Scrollbar Kit */
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: #fff;
+    border-left: 2px solid #eee;
+    box-shadow: 0px 0px 21px 0px #0003 inset;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #000;
+    box-shadow: 0px 0px 10px 0px #eeeeee8c inset;
+    border-radius: 100vh;
+}
+
+
+    /* Default Classes */
+
+    
+.container{
+    width: 1320px;
+    margin: auto;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+.landing{
+    background-color: #eeeeee;
+    height: 100vh;
+    z-index: -999   ;
+}
+/* Start Header */
+.header{
+    background-color: #fff;
+    box-shadow: 0px 0px 14px 0px #0000001b;
+}
+.navbar{
+    padding:25px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .links ul{
+    display: flex;
+    gap: 25px;
+}
+.navbar .links li{
+    font-family: "Open Sans", sans-serif; 
+    font-weight: 600;  
+}
+.navbar .logo h1{
+    font-size: 30px;
+    font-family: "Open Sans", sans-serif;
+}
+.navbar .logo span{
+   color: #ce3347;
+}
+.navbar .light-mood i{
+    font-size: 25px;
+}
+
+/* End Header */
+
+
+
+/* Start HomeScreen (Landing) */
+.landing .content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 200px;
+}
+.content .caption{
+    width: 524px;
+}
+.content .home-logo{
+    width: fit-content;
+    filter: drop-shadow(4px 4px 9px #000a);
+}
+.content .home-logo img{
+    width: 524px;
+}
+.content .caption h2{
+    font-size: 65px;
+    font-family: "Amatic SC", sans-seris;
+}
+.content .caption p{
+    margin-block: 20px;
+    line-height: 1.6;
+    font-size: 1rem;
+    color: #4f4f5a;
+    font-family: "Open Sans", sans-serif;
+    padding-bottom: 10px;
+}
+
+.content .btn-group{
+    display: flex;
+}
+.content .btn-group .book-table-btn{
+    color: #fff;
+    font-size: 15px;
+}
+.content .btn-group .book-table-btn{
+    background-color:hsl( 0, 84%, 44% );
+    padding: 15px 30px;
+    border: 0px;
+    border-radius: 0px 25px 25px 25px;
+}
+.btn-group .watch-btn{
+    margin-left: 30px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    position: relative;
+    transition: all ease .5s;
+}
+.btn-group .watch-btn span{
+    font-weight: 500;
+}
+.watch-btn .icon i{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(65%, -70%);
+    z-index: 111;
+}
+.watch-btn .icon{
+    width:25px;
+    height: 100%;
+    padding: 0px;
+    background-color:hsl( 0, 84%, 44% );
+    border-radius: 100px 0 0 100px;
+}
+.watch-btn .icon::after{
+    content: "";
+    position: absolute;
+    left: 15%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius:50%;
+}
+.watch-btn:hover{
+    color: #ce3347;
+}
+
+/* End HomeScreen (Landing) */
+
+/* Start Our-CHEFS Section */
+
+.our-chefs{
+    padding: 100px 0;
+
+}
+.chef-blocks{
+    display: flex;
+}
+.chef-card{
+    width: 33.333%;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 10px;
+}
+.chef-card img{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+.chef-card .card-content{
+    text-align: center;
+    padding: 1.5625rem;
+}
+.chef-card .card-content h3{
+    padding: 10px 0;
+}
+.chef-card .card-content span{
+    padding: 10px 0;
+}
+.chef-card .card-content p{
+    padding: 10px 0;
+    font-size: 0.9375rem;
+    font-style: italic;
+    color:#7f7f90;
+}
